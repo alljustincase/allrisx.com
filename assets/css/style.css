@@ -1,7 +1,4 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-
-/*custom css is at the bottom of this file */
 
 /*
 	Arcana by HTML5 UP
@@ -96,6 +93,11 @@ html *
 	h3 {
 		font-size: 1.2em;
 		letter-spacing: -0.025em;
+	}
+
+
+	h3.custom-margin-bottom{
+		margin-bottom: 0.1em;
 	}
 
 	sub {
@@ -647,8 +649,7 @@ html *
 				#nav > ul > li a {
 					color: #000000;
 					text-decoration: none;
-					border: 0;
-					/*display: block;*/
+					border: 0;					
 					display: inline-block;
 					padding: 1.5em 0.5em 1.35em 0.5em;
 				}

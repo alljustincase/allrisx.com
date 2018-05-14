@@ -74,14 +74,13 @@
 	}
 
 		#banner header span{
-			display: inline-block;
-			/*float: left;*/
+			display: inline-block;			
 			text-align: center;
 		}			
 		
 
 		#banner header h2 {
-			/*display: block;*/			
+					
 		}
 
 		/*5 May 2018| NantiyaK.*/
@@ -95,8 +94,7 @@
 		
 
 
-		#banner header .button {
-			/*margin: 1em 0 0 0;*/
+		#banner header .button {			
 			margin: 0;	
 			padding:0 0.4em;		
 		}
@@ -167,7 +165,7 @@
 
 		/*-----NantiyaK. 5 May 2018------*/
 			img#allrisx-logo{			    
-		        height: 22px;
+		        height: 26px;
 			    width: auto !important;
 			    max-width: 80% !important;
 			}
