@@ -90,6 +90,11 @@ html *
 		letter-spacing: -0.025em;
 	}
 
+	h2.border-bottom{
+		border-bottom: 1px solid Silver;	
+	}
+
+
 	h3 {
 		font-size: 1.2em;
 		letter-spacing: -0.025em;
@@ -282,6 +287,17 @@ html *
 				display: block;
 				width: 100%;
 			}
+
+			
+			/*NantiyaK.: custom class for image height*/
+			.image.featured.custom-img-width img{
+				width:50%;
+				display: block;
+				margin: 0 auto;
+			}
+
+
+
 
 /* Icon */
 
@@ -859,6 +875,10 @@ html *
 		padding: 5em 0 3em 0;
 	}
 
+	.wrapper-custom-top-padding {
+		padding: 2em 0 3em 0;		
+	}
+
 		.wrapper.style1 {
 			background: #fff;
 		}
@@ -881,8 +901,7 @@ html *
 			color: white;
 		}
 
-			.wrapper.style3 .button {
-				/*background: white;*/
+			.wrapper.style3 .button {				
 				background: #336699;
 				color: #FFFFFF;
 			}
