@@ -1,0 +1,12 @@
+<div id="featureSidebar">
+
+	<!-- Sidebar -->	
+	{% for feat in site.feats %}
+		<section>
+			<!--<a href="{{"/features/" | prepend: site.baseurl }}{{ feat.link }}">-->
+				<h3>{{ feat.text }}</h3>
+			<!--</a>				-->
+		</section>
+	{% endfor %}
+	
+</div>

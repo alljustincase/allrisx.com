@@ -16,10 +16,11 @@
 		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
-		<noscript>
+		<noscript>			
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
+
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
 		
@@ -76,7 +77,7 @@ window.__lc.license = 9738065;
 <!-- End Purechat -->
 
 <!-- Start LiveHelpNow.net -->
-<!--
+
 <script type="text/javascript">
 	window.lhnJsSdkInit = function () {
 		lhnJsSdk.setup = {
@@ -96,24 +97,18 @@ window.__lc.license = 9738065;
 		lhnjs.parentNode.insertBefore(newjs, lhnjs);
 	}(document, "script"));
 </script>
- -->
+
 <!-- End LiveHelpNow.net -->
 		
 		
-		
-		
-		
-	</head>
-	
-
-	
+	</head>	
 	<body>
 
 		<!-- Header -->
 			<div id="header">
 						
 				<!-- Logo -->
-					<h1><a href="{{ site.baseurl }}/index.html" id="logo">						
+					<h1><a href="{{ site.baseurl }}/" id="logo">						
 						<img  id="allrisx-logo" src="{{ site.baseurl }}/assets/images/AllRisx-edit-yellowX.png"/>
 				    </a></h1>
 				
@@ -121,135 +116,59 @@ window.__lc.license = 9738065;
 					<nav id="nav">
 						<ul>
 							{% assign current = page.url | downcase | split: '/' %}
-							<li>
-								<a href="{{ site.baseurl }}/index.html">Home</a>
+							<li {% if page.title == "AllRisX" %}class="current"{% endif %}>
+								<a href="{{"/" | prepend: site.baseurl }}">Home</a>
 							</li>
-							<li>
+
+							<li {% if page.categories == "Products" %}class="current"{% endif %}>
 								<a href="">Products</a>
 								<ul>
-									<li><a href="#">for Individuals/Families</a></li>
-									<li><a href="#">for Businesses/Corporations</a></li>
-									<li><a href="#">for Agencies/Brokers</a></li>
-									<li><a href="#">for Insurance Companies</a></li>
+									{% for prod in site.prods %}
+									<li>
+										<a href="{{"/products/" | prepend: site.baseurl }}{{ prod.link }}">
+										{{ prod.text }}</a>
+									</li>										    
+									{% endfor %}
+																	
 								</ul>
 							</li>
-							<li>
+
+							<li {% if page.categories == "Features" %}class="current"{% endif %}>
 								<a href="">Features</a>
 								<ul class="two-columns">
-									<li><a href="#">Partner Management</a></li>
-									<li><a href="#">Project Management</a></li>
-									<li><a href="#">Policy Management</a></li>
-									<li><a href="#">Claim Management</a></li>
-									<li><a href="#">Document Management</a></li>
-									<li><a href="#">Task Management</a></li>
-									<li><a href="#">Commission Management</a></li>
-									<li><a href="#">Multilevel Marketing</a></li>
-									<li><a href="#">Quote Calculators</a></li>
-									<li><a href="#">Premium comparisons</a></li>
-									<li><a href="#">Custom Forms System</a></li>
-									<li><a href="#">Workflow Integration</a></li>
-									<li><a href="#">MS Azure Integration</a></li>
-									<li><a href="#">Office 365 Integration</a></li>
-									<li><a href="#">Chat Integrations</a></li>
-									<li><a href="#">Configurable Notifications</a></li>
-									<li><a href="#">Integration platforms support</a></li>
-									<li><a href="#">Transactional EMail support</a></li>
-									<li><a href="#">EMail-,PDF-,Chat-Templates</a></li>
-									<li><a href="#">Custom Reporting</a></li>
-									<li><a href="#">Custom Branding</a></li>
-									<li><a href="#">Multi Tenancy support</a></li>
-									<li><a href="#">Browser-,Desktop-,Mobile-Apps</a></li>
-									<li><a href="#">Offline capabilities</a></li>
-									<li><a href="#">BlockChain support</a></li>
-									<li><a href="#">REST-APIs and REST-Hooks</a></li>
-									<li><a href="#">Scalability and Availability</a></li>
-									<li><a href="#">Artificial Intelligence</a></li>
-									<li><a href="#">Internet of Things</a></li>
-									<li><a href="#">Security and Compliance</a></li>
-									<li><a href="#">Customization+Extensibility</a></li>
+									{% for feat in site.feats %}
+									<li>
+										<a href="{{"/features/" | prepend: site.baseurl }}{{ feat.link }}">
+										{{ feat.text }}</a>
+									</li>										    
+									{% endfor %}
 								</ul>
 							</li>
-							<li>
+							<li {% if page.categories == "Technologies" %}class="current"{% endif %}>
 								<a href="">Technologies</a>
 								<ul class="three-columns">
-									<li><a href="#">WebSite Integrations</a></li>
-									<li><a href="#">WebShop Integrations</a></li>
-									<li><a href="#">CRM Integrations</a></li>
-									<li><a href="#">Accounting Integrations</a></li>
-									<li><a href="#">Custom Forms System</a></li>
-									<li><a href="#">Questionaire mode</a></li>
-									<li><a href="#">Responsive Design</a></li>
-									<li><a href="#">Workflow Integration</a></li>
-									<li><a href="#">MS Azure Integration</a></li>
-									<li><a href="#">Office 365 Integration</a></li>
-									<li><a href="#">Chat Integrations</a></li>
-									<li><a href="#">Configurable Notifications</a></li>
-									<li><a href="#">Integration platforms support</a></li>
-									<li><a href="#">Transactional EMail support</a></li>
-									<li><a href="#">EMail-,PDF-,Chat-Templates</a></li>
-									<li><a href="#">Custom Reporting</a></li>
-									<li><a href="#">DataWarehouse Integrations</a></li>
-									<li><a href="#">Custom Branding</a></li>
-									<li><a href="#">Multi Tenancy support</a></li>
-									<li><a href="#">Browser-,Desktop-,Mobile-Apps</a></li>
-									<li><a href="#">Mobile Device Features support</a></li>
-									<li><a href="#">Hybrid Apps - near native</a></li>
-									<li><a href="#">Offline capabilities</a></li>
-									<li><a href="#">REST-APIs and REST-Hooks</a></li>
-									<li><a href="#">Scalability and Availability</a></li>
-									<li><a href="#">Artificial Intelligence</a></li>
-									<li><a href="#">Chatbots integration</a></li>
-									<li><a href="#">Internet of Things</a></li>
-									<li><a href="#">Social Identity Providers</a></li>
-									<li><a href="#">Security and Compliance</a></li>
-									<li><a href="#">BPMN Process Documenttation</a></li>
-									<li><a href="#">Computer/Telephone Integration</a></li>
-									<li><a href="#">Conference System Integration</a></li>
-									<li><a href="#">E-Learning Integration</a></li>
-									<li><a href="#">Dynamic Online Help System</a></li>
-									<li><a href="#">Walkthrough support</a></li>
-									<li><a href="#">Feedback & Support System</a></li>
-									<li><a href="#">MultiLanguage Support</a></li>
-									<li><a href="#">Online Translation Support</a></li>
-									<li><a href="#">Excel Calculations Integration</a></li>
-									<li><a href="#">Themes Support</a></li>
-									<li><a href="#">Regional Settings Support</a></li>
-									<li><a href="#">Maps and Navigation Integration</a></li>
-									<li><a href="#">Mobile Contacts Sync</a></li>
-									<li><a href="#">Mobile Tasks Sync</a></li>
-									<li><a href="#">Mobile Documents Sync</a></li>
-									<li><a href="#">Desktop Documents Sync</a></li>
-									<li><a href="#">E-Learning Integration</a></li>
-									<li><a href="#">Realtime notifications</a></li>
-									<li><a href="#">Serverless PaaS Architecure</a></li>
-									<li><a href="#">Platform as Code Deployment</a></li>
-									<li><a href="#">Blue / Green Deployments</a></li>
-									<li><a href="#">Early Prototyping Functions</a></li>
-									<li><a href="#">Feature Switches</a></li>
-									<li><a href="#">Content Delivery Network Support</a></li>
-									<li><a href="#">On-premise Caching Support</a></li>
-									<li><a href="#">Dedicated Cloud Connections</a></li>
-									<li><a href="#">NoSQL JSON Database</a></li>
-									<li><a href="#">Gremlin / Graph API Support</a></li>
-									<li><a href="#">GIT based Code Pipelines</a></li>
-									<li><a href="#">Custom Extensions</a></li>
-									<li><a href="#">Custom Deployments</a></li>
-									<li><a href="#">Custom Developments</a></li>
+									{% for techno in site.technos %}
+									<li>
+										<a href="{{"/technologies/" | prepend: site.baseurl }}{{ techno.link }}">
+										{{ techno.text }}</a>
+									</li>										    
+									{% endfor %}									
 								</ul>
+
 							</li>
 							<li {% if current[1] == 'blog' %}class="current"{% endif %}>
-								<a href="{{ site.baseurl }}/blog">Blog</a>
+								<a href="{{ site.baseurl }}/blog/">Blog</a>
 							</li>
-							<li>
-								<a href="">Pricing</a>
+							<li {% if page.title == "pricing" %}class="current"{% endif %}>
+								<a href="{{"/pricing.html" | prepend: site.baseurl }}">Pricing</a>
 							</li>
 							<li>
 								<a href="">SignUp</a>
 							</li>
-							<li>
-								<a href="">SignIn</a>
+							<li {% if page.title == "signin" %}class="current"{% endif %}>
+								<a href="{{"/signin.html" | prepend: site.baseurl }}">SignIn</a>
 							</li>
 						</ul>
 					</nav>
 
-			</div>
+			</div>			

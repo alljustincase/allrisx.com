@@ -1,0 +1,58 @@
+{% include header.html %}
+
+<!-- Main -->
+	<section class="wrapper style1">
+		<div class="container">
+			<div class="row double">
+				<div class="9u">
+
+			<!-- Blog -->
+				<section>
+					<header class="major no-bottom-padding">
+						<h2>{{ page.title }}</h2>
+						<p>{{ page.intro }}</p>
+					</header>
+					<div class="row">							
+						<div class="12u">
+							<section class="box">
+								<!--<a href="#" class="image left"><img src="{{ site.baseurl }}{{ page.featured1 }}" alt="" /></a> -->
+								{{ page.desc1 }}
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="-1u 8u">
+							<section class="box">
+								<a href="#" class="image right"><img src="{{ site.baseurl }}{{ page.featured2 }}" alt="" /></a>
+								{{ page.desc2 }}
+							</section>
+						</div>
+					</div>
+					<div class="row">
+						<div class="8u -1u">
+							<section class="box">
+								<a href="#" class="image left"><img src="{{ site.baseurl }}{{ page.featured3 }}" alt="" /></a>
+								{{ page.desc3 }}
+							</section>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+
+			<div class="3u">				
+				<h2> {{ page.categories }} </h2>
+				{% if page.categories == "Products" %}
+				{% include product-sidebar.html %}				
+				{% elsif page.categories == "Features" %}
+				{% include feature-sidebar.html %}				
+				{% elsif page.categories == "Technologies" %}
+				{% include technology-sidebar.html %}
+				{% endif %}
+			</div>
+
+		</div>
+	</div>
+	</section>
+{% include footer.html %}

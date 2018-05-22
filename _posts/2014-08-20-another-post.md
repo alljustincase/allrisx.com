@@ -1,8 +1,11 @@
 ---
 title: Lorem Ipsum Dolor Sit Amet
-featured: /assets/images/pic03.jpg
-layout: post
+featured1: /assets/images/pic03.jpg
+featured2: /assets/images/pic01.jpg
+featured3: /assets/images/pic01.jpg
+layout: three-img-post
+permalink: /blog/another.html
+desc1: <p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+desc2:	<p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+desc3:	<p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
 ---
-
-<p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-<p>Duis aute irure dolor in reprehenderit in voluptate reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
