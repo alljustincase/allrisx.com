@@ -2,3 +2,226 @@ name: AllRisX
 description: InsurTech enabled.
 paginate: 10
 baseurl: ''
+
+# Build settings
+# categories for tag creating
+# 21 May 2018 basically categories is main menu group
+permalink: /:categories/:title
+excerpt_separator: <!--more-->
+
+
+# Making navigation group separate from posts
+collections:  
+  products:
+    output: true
+    permalink: /products/:title/  
+  features:
+    output: true
+    permalink: /features/:title/
+  technologies:
+    output: true
+    permalink: /technologies/:title/
+
+#menu of Products
+prods:
+  - link: ind-fam.html
+    text: for Individuals/Families
+  - link: businesses-corporations.html
+    text: for Businesses/Corporations
+  - link: agencies-brokers.html
+    text: for Agencies/Brokers
+  - link: insurance-companies.html
+    text: for Insurance Companies
+
+#menu of Features
+feats:
+  - link: partner-management.html
+    text: Partner Management
+  - link: project-management.html
+    text: Project Management
+  - link: policy-management.html
+    text: Policy Management
+  - link: claim-management.html
+    text: Claim Management
+  - link: document-management.html
+    text: Document Management
+  - link: task-management.html
+    text: Task Management
+  - link: commission-management.html
+    text: Commission Management
+  - link: multilevel-marketing.html
+    text: Multilevel Marketing
+  - link: quote-calculators.html
+    text: Quote Calculators
+  - link: premium-comparisons.html
+    text: Premium comparisons
+  - link: custom-forms-system.html
+    text: Custom Forms System
+  - link: workflow-integration.html
+    text: Workflow Integration
+  - link: ms-azure-integration.html
+    text: MS Azure Integration
+  - link: office-365-integration.html
+    text: Office 365 Integration
+  - link: chat-integrations.html
+    text: Chat Integrations
+  - link: configurable-notifications.html
+    text: Configurable Notifications
+  - link: integration-platforms-support.html
+    text: Integration platforms support
+  - link: transactional-email-support.html
+    text: Transactional EMail support
+  - link: email-pdf-chat-templates.html
+    text: EMail-,PDF-,Chat-Templates
+  - link: custom-reporting.html
+    text: Custom Reporting
+  - link: custom-branding.html
+    text: Custom Branding
+  - link: multi-tenancy-support.html
+    text: Multi Tenancy support
+  - link: browser-desktop-mobile-apps.html
+    text: Browser-,Desktop-,Mobile-Apps
+  - link: offline-capabilities.html
+    text: Offline capabilities
+  - link: blockchain-support.html
+    text: BlockChain support
+  - link: rest-apis-and-rest-hooks.html
+    text: REST-APIs and REST-Hooks
+  - link: scalability-and-availability.html
+    text: Scalability and Availability
+  - link: artificial-intelligence.html
+    text: Artificial Intelligence
+  - link: internet-of-things.html
+    text: Internet of Things
+  - link: security-and-compliance.html
+    text: Security and Compliance
+  - link: customization-extensibility.html
+    text: Customization+Extensibility
+
+
+#menu of Technologies
+technos:
+  - link: accounting-integrations.html
+    text: Accounting Integrations
+  - link: artificial-intelligence.html
+    text: Artificial Intelligence
+  - link: blue-green-deployments.html
+    text: Blue / Green Deployments
+  - link: bpmn-process-documentation.html
+    text: BPMN Process Documentation
+  - link: browser-desktop-mobile-apps.html
+    text: Browser-Desktop-Mobile-Apps
+  - link: chatbots-integration.html
+    text: Chat Integrations
+  - link: chat-integrations.html
+    text: Chatbots integration
+  - link: computer-telephone-integration.html
+    text: Computer/Telephone Integration
+  - link: conference-system-integration.html
+    text: Conference System Integration
+  - link: configurable-notifications.html
+    text: Configurable Notifications
+  - link: content-delivery-network-support.html
+    text: Content Delivery Network Support
+  - link: crm-integrations.html
+    text: CRM Integrations
+  - link: custom-branding.html
+    text: Custom Branding
+  - link: custom-deployments.html
+    text: Custom Deployments
+  - link: custom-developments.html
+    text: Custom Developments
+  - link: custom-extensions.html
+    text: Custom Extensions
+  - link: custom-forms-system.html
+    text: Custom Forms System
+  - link: custom-reporting.html
+    text: Custom Reporting
+  - link: data-warehouse-integrations.html
+    text: DataWarehouse Integrations
+  - link: dedicated-cloud-connections.html
+    text: Dedicated Cloud Connections
+  - link: desktop-documents-sync.html
+    text: Desktop Documents Sync
+  - link: dynamic-online-help-system.html
+    text: Dynamic Online Help System
+  - link: early-prototyping-functions.html
+    text: Early Prototyping Functions
+  - link: elearning-integration.html
+    text: E-Learning Integration
+  - link: email-pdf-chat-templates.html
+    text: EMail-PDF-Chat-Templates
+  - link: excel-calculations-integration.html
+    text: Excel Calculations Integration
+  - link: feature-switches.html
+    text: Feature Switches
+  - link: feedback-support-system.html
+    text: Feedback & Support System
+  - link: git-based-code-pipelines.html
+    text: GIT based Code Pipelines
+  - link: gremlin-graph-api-support.html
+    text: Gremlin / Graph API Support
+  - link: hybrid-apps-near-native.html
+    text: Hybrid Apps - near native
+  - link: integration-platforms-support.html
+    text: Integration platforms support
+  - link: iotsinternet of -things.html
+    text: Internet of Things
+  - link: maps-and-navigation-integration.html
+    text: Maps and Navigation Integration
+  - link: mobile-contacts-sync.html
+    text: Mobile Contacts Sync
+  - link: mobile-device-features-support.html
+    text: Mobile Device Features support
+  - link: mobile-documents-sync.html
+    text: Mobile Documents Sync
+  - link: mobile-tasks-sync.html
+    text: Mobile Tasks Sync
+  - link: ms-azure-integration.html
+    text: MS Azure Integration
+  - link: multi-language-support.html
+    text: MultiLanguage Support
+  - link: multi-tenancy-support.html
+    text: Multi Tenancy support 
+  - link: nosql-json-database.html
+    text: NoSQL JSON Database
+  - link: office-365-integration.html
+    text: Office 365 Integration
+  - link: offline capabilities.html
+    text: Offline capabilities
+  - link: online-translation-support.html
+    text: Online Translation Support
+  - link: on-premise-caching-support.html
+    text: On-premise Caching Support
+  - link: platform-as-code-deployment.html
+    text: Platform as Code Deployment
+  - link: questionaire-mode.html
+    text: Questionaire mode
+  - link: realtime-notifications.html
+    text: Realtime notifications
+  - link: regional-settings-support.html
+    text: Regional Settings Support
+  - link: responsive-design.html
+    text: Responsive Design
+  - link: rest-apis-and-rest-hooks.html
+    text: REST-APIs and REST-Hooks
+  - link: scalability-and-availability.html
+    text: Scalability and Availability
+  - link: security-and-compliance.html
+    text: Security and Compliance
+  - link: serverless-paas-architecure.html
+    text: Serverless PaaS Architecure
+  - link: social-identity-providers.html
+    text: Social Identity Providers
+  - link: themes-support.html
+    text: Themes Support
+  - link: transactional-emai-support.html
+    text: Transactional EMail support
+  - link: walkthrough-support.html
+    text: Walkthrough support
+  - link: webshop-integrations.html
+    text: WebShop Integrations
+  - link: website-integrations.html
+    text: Website Integrations 
+  - link: workflow-integration.html
+    text: Workflow Integration
