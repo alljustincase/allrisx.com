@@ -95,8 +95,7 @@ feats:
     text: Internet of Things
   - link: security-and-compliance.html
     text: Security and Compliance
-  - link: customization-extensibility.html
-    text: Customization+Extensibility
+  
 
 
 #menu of Technologies
@@ -225,3 +224,5 @@ technos:
     text: Website Integrations 
   - link: workflow-integration.html
     text: Workflow Integration
+  - link: customization-extensibility.html
+    text: Customization+Extensibility
