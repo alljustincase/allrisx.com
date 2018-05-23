@@ -1,13 +1,9 @@
 ---
 title: For Individuals or Families
 categories: Products
-featured1: /assets/images/products/under_construction.png
-featured2: /assets/images/products/under_construction.png
-featured3: /assets/images/products/under_construction.png
-layout: three-img-post
+featured: /assets/images/products/individuals.jpg
+layout: post
 permalink: /products/ind-fam.html
 intro: introduction text
-desc1: <p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-desc2:	<p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-desc3:	<p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
 ---
+<p>Use AllRisX for yourself, your family and friends. Get the best quotes available and start to earn money by using AllRisX !</p>
