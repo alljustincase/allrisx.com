@@ -7,7 +7,7 @@
 				<section>
 					<header class="major">
 						<h2>{{ page.title }}</h2>
-						<p>Posted {{ page.date | date_to_string }}</p>
+						<p>{{ page.intro }}</p>
 					</header>
 					<div class="row">
 						<div class="8u -2u">
@@ -21,4 +21,5 @@
 
 		</div>
 	</section>
+{% include cta.html %}
 {% include footer.html %}
