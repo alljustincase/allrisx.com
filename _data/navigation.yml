@@ -12,97 +12,98 @@ prods:
 
 #menu of Features
 #icon is for slide on index
+#see icon list here: http://www.99lime.com/blog/upgraded-font-awesome/
 feats:
   - link: partner-management.html
     text: Partner Management
-    icon:
+    icon: fa-bullhorn
   - link: project-management.html
     text: Project Management
-    icon:
+    icon: fa-briefcase
   - link: policy-management.html
     text: Policy Management
-    icon:
+    icon: fa-check
   - link: claim-management.html
     text: Claim Management
-    icon:
+    icon: fa-cog
   - link: document-management.html
     text: Document Management
-    icon:
+    icon: fa-clipboard
   - link: task-management.html
     text: Task Management
-    icon:
+    icon: fa-columns
   - link: commission-management.html
     text: Commission Management
-    icon:
+    icon: fa-bitbucket
   - link: multilevel-marketing.html
     text: Multilevel Marketing
-    icon:
+    icon: fa-chain
   - link: quote-calculators.html
     text: Quote Calculators
-    icon:
+    icon: fa-calculator
   - link: premium-comparisons.html
     text: Premium comparisons
-    icon:
+    icon: fa-bar-chart-o
   - link: custom-forms-system.html
     text: Custom Forms System
-    icon:
+    icon: fa-briefcase
   - link: workflow-integration.html
     text: Workflow Integration
-    icon:
+    icon: fa-code-fork
   - link: ms-azure-integration.html
     text: MS Azure Integration
-    icon:
+    icon: fa-cloud-download
   - link: office-365-integration.html
     text: Office 365 Integration
-    icon:
+    icon: fa-codepen
   - link: chat-integrations.html
     text: Chat Integrations
-    icon:
+    icon: fa-comment
   - link: configurable-notifications.html
     text: Configurable Notifications
-    icon:
+    icon: fa-bell
   - link: integration-platforms-support.html
     text: Integration platforms support
-    icon:
+    icon: fa-code
   - link: transactional-email-support.html
     text: Transactional EMail support
-    icon:
+    icon: fa-code
   - link: email-pdf-chat-templates.html
     text: EMail-,PDF-,Chat-Templates
-    icon:
+    icon: fa-briefcase
   - link: custom-reporting.html
     text: Custom Reporting
-    icon:
+    icon: fa-check
   - link: custom-branding.html
     text: Custom Branding
-    icon:
+    icon: fa-bookmark
   - link: multi-tenancy-support.html
     text: Multi Tenancy support
-    icon:
+    icon: fa-code
   - link: browser-desktop-mobile-apps.html
     text: Browser-,Desktop-,Mobile-Apps
-    icon:
+    icon: fa-android
   - link: offline-capabilities.html
     text: Offline capabilities
-    icon:
+    icon: fa-behance
   - link: blockchain-support.html
     text: BlockChain support
-    icon:
+    icon: fa-chain
   - link: rest-apis-and-rest-hooks.html
     text: REST-APIs and REST-Hooks
-    icon:
+    icon: fa-anchor
   - link: scalability-and-availability.html
     text: Scalability and Availability
-    icon:
+    icon: fa-arrows-alt
   - link: artificial-intelligence.html
     text: Artificial Intelligence
-    icon:
+    icon: fa-child
   - link: internet-of-things.html
     text: Internet of Things
-    icon:
+    icon: fa-cloud-upload
   - link: security-and-compliance.html
     text: Security and Compliance
-    icon:
+    icon: fa-bomb
 
 #menu of Technologies
 technos:
