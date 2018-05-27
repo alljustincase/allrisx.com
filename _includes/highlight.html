@@ -1,28 +1,24 @@
-<!-- Highlights -->
-	<section class="wrapper style1">
-		<div class="container">
-			<div class="row double">
-				<section class="4u">
-					<div class="box highlight">
-						<i class="icon major fa-clipboard"></i>
-						<h3>Quotes</h3>
-						<p>Get quotes and calculate comparisons to cover risks.</p>
+<section class="wrapper style1 wrapper-slide">
+			<div class="container">
+				<div class="row double">
+					<div class="12u">				
+						<div id="bxslider">
+							{%  for feat in site.data.navigation.feats %}
+							{%	assign heading = feat.text	%}
+							{%	assign href = feat.link | prepend: '/features/' %}
+							{%  assign icon = feat.icon %}
+							
+							<section class="4u">
+								<div class="box highlight">
+									<i class="icon major {{ icon }}"></i>
+									<h3>
+										<a href="{{ href }}" target="_blank">{{ heading }}</a>
+									</h3>															
+								</div>
+							</section>
+							{% endfor %}
+						</div>		
 					</div>
-				</section>
-				<section class="4u">
-					<div class="box highlight">
-						<i class="icon major fa-pencil"></i>
-						<h3>Claims</h3>
-						<p>Report and regulate claims that occured, stay up to date with their latest status.</p>
-					</div>
-				</section>
-				<section class="4u">
-					<div class="box highlight">
-						<i class="icon major fa-cogs"></i>
-						<h3>Administration</h3>
-						<p>Keep an overview of all policies, renewals, obligations and tasks.</p>
-					</div>
-				</section>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
