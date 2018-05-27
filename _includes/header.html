@@ -11,95 +11,28 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/css/ie/html5shiv.js"></script><![endif]-->
-		<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+		<script src="{{ site.baseurl }}/assets/js/jquery-3.1.1.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
+
+		{% if page.title contains "Home" %}
+			<script src="{{ site.baseurl }}/assets/js/slide/jquery.bxslider.js"></script>			
+		{% endif %}
+
 		<noscript>			
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style-wide.css" />
-
 		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
+
+		{% if page.title contains "Home" %}
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/bxslider.css" />		
+		{% endif %}
 		
-		
-		
-		<!-- DEMO LIVE CHAT CODE SECTION-->
-		<!-- Start of Async app.Drift.com Code -->
-		<!--
-<script>
-"use strict";
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('i66scgatdtd5');
-</script>
--->
-<!-- End of Async Drift Code -->
 
-<!-- Start of LiveChat (www.livechatinc.com) code -->
-<!--
-<script type="text/javascript">
-window.__lc = window.__lc || {};
-window.__lc.license = 9738065;
-(function() {
-  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-})();
-</script>
--->
-<!-- End of LiveChat code -->
-<!-- Start purechat -->
-<!--
-<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '129709af-ba84-4805-84e1-f5e3004ba710', f: true }); done = true; } }; })();</script>
--->
-<!-- End Purechat -->
-
-<!-- Start LiveHelpNow.net -->
-
-<script type="text/javascript">
-	window.lhnJsSdkInit = function () {
-		lhnJsSdk.setup = {
-			application_id: "59293fde-7377-9244-be8d-217efd29c953",
-			application_secret: "cpasnkcek7qhrloqnniehjzcoezyzprre8h/hb+/pmrjpi/wdi"
-		};
-		lhnJsSdk.controls = [{
-			type: "hoc",
-			id: "42c4fc3e-c443-3643-bd5a-1bc16b1b7bda"
-		}];
-	};
-
-	(function (d, s) {
-		var newjs, lhnjs = d.getElementsByTagName(s)[0];
-		newjs = d.createElement(s);
-		newjs.src = "https://developer.livehelpnow.net/js/sdk/lhn-jssdk-current.min.js";
-		lhnjs.parentNode.insertBefore(newjs, lhnjs);
-	}(document, "script"));
-</script>
-
-<!-- End LiveHelpNow.net -->
-		
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->	
 		
 	</head>	
 	<body>
@@ -115,8 +48,8 @@ window.__lc.license = 9738065;
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							{% assign current = page.url | downcase | split: '/' %}
-							<li {% if page.title == "AllRisX" %}class="current"{% endif %}>
+							{% assign current = pagef.url | downcase | split: '/' %}
+							<li {% if page.title == "Home" %}class="current"{% endif %}>
 								<a href="{{"/" | prepend: site.baseurl }}">Home</a>
 							</li>
 
@@ -156,7 +89,7 @@ window.__lc.license = 9738065;
 								</ul>
 
 							</li>
-							<li {% if current[1] == 'blog' %}class="current"{% endif %}>
+							<li {% if page.title == 'Blog' %}class="current"{% endif %}>
 								<a href="{{ site.baseurl }}/blog/">Blog</a>
 							</li>
 							<li {% if page.title == "pricing" %}class="current"{% endif %}>

@@ -76,17 +76,24 @@
 						</ul>
 					</div>
 
-			</div>
-	
-	
-		<!--begin: test Intercom messenger
-    	<script>
-          window.intercomSettings = {
-            app_id: "lpl82z49"
-          };
-        </script>
-        <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/lpl82z49';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-    	end: test Intercom messenger -->
+			</div>	
+
+    	{%  if page.title contains "Home" %}
+    		<script type="text/javascript">
+    			$('#bxslider').bxSlider({
+				mode: 'horizontal',
+				moveSlides: 1,
+				slideMargin: 40,
+				infiniteLoop: true,
+				slideWidth: 660,
+				minSlides: 3,
+				maxSlides: 3,
+				speed: 400,
+				pager:false,
+				auto: true				
+			});	
+    		</script>
+    	{% endif %}
 
 	</body>
 </html>
