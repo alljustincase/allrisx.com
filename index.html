@@ -58,23 +58,27 @@ permalink: /
 	</section>
 
 <!-- Posts -->
-	<section class="wrapper style1">
+<section class="wrapper style1">
 		<div class="container">
 			<div class="row">
 				<section class="6u">
 					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/individuals.jpg" alt="" /></a>
+						<a href="{{"/products/ind-fam.html" | prepend: site.baseurl }}" class="image left"><img src="{{ site.baseurl }}/assets/images/products/individuals.jpg" alt="" /></a>
 						<div class="inner">
-							<h3 class="custom-margin-bottom">Individuals</h3>
+							<h3 class="custom-margin-bottom">
+								<a href="{{"/products/ind-fam.html" | prepend: site.baseurl }} ">Individuals</a>
+							</h3>
 							<p>Use AllRisX for yourself, your family and friends. Get the best quotes available and start to earn money by using AllRisX !<br><a href="{{"/products/ind-fam.html" | prepend: site.baseurl }} ">More info...</a></p>
 						</div>
 					</div>
 				</section>
 				<section class="6u">
 					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/corporations.jpg" alt="" /></a>
+						<a href="{{"/products/businesses-corporations.html" | prepend: site.baseurl }} " class="image left"><img src="{{ site.baseurl }}/assets/images/products/corporations.jpg" alt="" /></a>
 						<div class="inner">
-							<h3 class="custom-margin-bottom">Corporations</h3>
+							<h3 class="custom-margin-bottom">
+								<a href="{{"/products/businesses-corporations.html" | prepend: site.baseurl }} ">Corporations</a>
+							</h3>
 							<p>Keep an eye on all your risks and insurance solutions and cooperate with brokers, agencies and insurance providers.<br><a href="{{"/products/businesses-corporations.html" | prepend: site.baseurl }} ">More info...</a></p>
 						</div>
 					</div>
@@ -83,18 +87,22 @@ permalink: /
 			<div class="row">
 				<section class="6u">
 					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/agencies-brokers.jpg" alt="" /></a>
+						<a href="{{"/products/agencies-brokers.html" | prepend: site.baseurl }} " class="image left"><img src="{{ site.baseurl }}/assets/images/products/agencies-brokers.jpg" alt="" /></a>
 						<div class="inner">
-							<h3 class="custom-margin-bottom">Agencies and Brokers</h3>
-							<p>Find new clients, offer them a state of the art portal and premium calculators and keep track of all their insurance data.<br><a href="{{"/products/agencies-brokers.html" | prepend: site.baseurl }} ">More info...</a></p>
+							<h3 class="custom-margin-bottom">
+								<a href="{{"/products/agencies-brokers.html" | prepend: site.baseurl }} ">Agencies and Brokers</a>
+							</h3>
+							<p>Find new clients, offer them a state of the art insurance portal, premium calculators and forms and keep track of all their insurance data.<br><a href="{{"/products/agencies-brokers.html" | prepend: site.baseurl }} ">More info...</a></p>
 						</div>
 					</div>
 				</section>
 				<section class="6u">
 					<div class="box post">
-						<a href="#" class="image left"><img src="{{ site.baseurl }}/assets/images/products/insure-comp.jpg" alt="" /></a>
+						<a href="{{"/products/insurance-companies.html" | prepend: site.baseurl }} " class="image left"><img src="{{ site.baseurl }}/assets/images/products/insure-comp.jpg" alt="" /></a>
 						<div class="inner">
-							<h3 class="custom-margin-bottom">Insurance Companies</h3>
+							<h3 class="custom-margin-bottom">
+								<a href="{{"/products/insurance-companies.html" | prepend: site.baseurl }} ">Insurance Companies</a>
+							</h3>
 							<p>Provide quote calculators, deliver insurance data to your own sales staff or your agencies and brokers.<br><a href="{{"/products/insurance-companies.html" | prepend: site.baseurl }} ">More info...</a></p>
 						</div>
 					</div>
@@ -102,5 +110,6 @@ permalink: /
 			</div>
 		</div>
 	</section>
+	
 	
 	{% include cta.html %}
