@@ -85,7 +85,7 @@ feats:
     icon: fa-android
   - link: offline-capabilities.html
     text: Offline capabilities
-    icon: fa-behance
+    icon: fa-check-circle
   - link: blockchain-support.html
     text: BlockChain support
     icon: fa-chain
