@@ -30,9 +30,32 @@
 		{% if page.title contains "Home" %}
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/bxslider.css" />		
 		{% endif %}
-		
-
+    
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->	
+		
+		
+        <!-- Start LiveHelpNow.net -->
+        <script type="text/javascript">
+          window.lhnJsSdkInit = function () {
+            lhnJsSdk.setup = {
+              application_id: "59293fde-7377-9244-be8d-217efd29c953",
+              application_secret: "cpasnkcek7qhrloqnniehjzcoezyzprre8h/hb+/pmrjpi/wdi"
+            };
+            lhnJsSdk.controls = [{
+              type: "hoc",
+              id: "42c4fc3e-c443-3643-bd5a-1bc16b1b7bda"
+            }];
+          };
+        
+          (function (d, s) {
+            var newjs, lhnjs = d.getElementsByTagName(s)[0];
+            newjs = d.createElement(s);
+            newjs.src = "https://developer.livehelpnow.net/js/sdk/lhn-jssdk-current.min.js";
+            lhnjs.parentNode.insertBefore(newjs, lhnjs);
+          }(document, "script"));
+        </script>
+        <!-- End LiveHelpNow.net -->
+		
 		
 	</head>	
 	<body>
