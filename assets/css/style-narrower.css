@@ -166,8 +166,7 @@
 		/*-----NantiyaK. 5 May 2018------*/
 			img#allrisx-logo{			    
 		        height: 26px;
-			    width: auto !important;
-			    max-width: 80% !important;
+			    margin-top: -5px !important;
 			}
 
 			
