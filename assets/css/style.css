@@ -843,7 +843,7 @@ html *
 		background-position: top center;		
 				
 		/*por*/
-		-webkit-background-size: 100%;
+		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
@@ -852,11 +852,9 @@ html *
 		background-repeat: no-repeat;		
 		height: 27em;					
 		position: relative;
-		text-align: center;		
-
-
-
+		text-align: center;			
 	}
+
 
 		#banner header {
 			position: absolute;
@@ -923,7 +921,7 @@ html *
 	}
 
 	.wrapper-slide{
-		padding: 5em 0;
+		padding: 5em 0 !important;
 	}
 
 		.wrapper.style1 {
