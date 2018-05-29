@@ -53,16 +53,12 @@
 	}
 
 
-	/*-----NantiyaK. 5 May 2018------*/
-	img#allrisx-logo{			    
-	   
-	}
-
 
 /* Banner */
 
 	#banner {
-		height: 18em;
+		/*height: 18em;*/
+		height: 15em;
 	}
 
 		/*5 May 2018| NantiyaK.*/
