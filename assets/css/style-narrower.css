@@ -70,7 +70,17 @@
 /* Banner */
 
 	#banner {
-		height: 20em;		
+		/*height: 20em;	*/
+
+		height: 14.5em;
+		-webkit-background-size: 100%;
+		-moz-background-size: 100%;
+		-o-background-size: 100%;
+		background-size: 100%;		
+	}
+
+	#banner header{
+		padding: 0.6em 0;
 	}
 
 		#banner header span{
