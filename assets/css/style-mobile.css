@@ -67,6 +67,16 @@
 			display: none;
 		}
 
+
+		/*-----NantiyaK. 5 May 2018------*/
+		img#allrisx-logo{			
+			height: 24px;
+    		width: auto;
+		}
+
+
+
+
 /* Wrapper */
 
 	.wrapper {

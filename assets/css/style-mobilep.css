@@ -53,10 +53,10 @@
 	}
 
 
-	/*-----NantiyaK. 5 May 2018------*/
-	
+	/*-----NantiyaK. 5 May 2018------*/	
 	img#allrisx-logo{			    
-	    
+	    min-width:83px;
+	    height: auto;
 	}
 	
 
