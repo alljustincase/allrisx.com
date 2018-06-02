@@ -1,6 +1,8 @@
 ---
 title: Ullamco Laboris minim veniam
 featured: /assets/images/pic01.jpg
+categories: Blog
+backlink: /blog/
 layout: post
 ---
 
