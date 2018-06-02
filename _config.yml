@@ -23,9 +23,16 @@ collections:
     permalink: /technologies/:title/
 
 
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
+
+
 excluded:
   - changelog.md
   - features-slider.html
   - LICENSE.txt
   - README.md
   - README.txt
+  - _plugins
