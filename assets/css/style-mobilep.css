@@ -107,7 +107,9 @@
 
 
 	.wrapper-slide{
-		padding: 2em 0 3em 0 !important;
+	/*padding: 2em 0 3em 0 !important;*/
+		padding: 2em 0 !important;
+	}
 
 /* CTA */
 
