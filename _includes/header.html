@@ -17,10 +17,6 @@
 		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
 
-		{% if page.title contains "Home" %}
-			<script src="{{ site.baseurl }}/assets/js/slide/jquery.bxslider.js"></script>			
-		{% endif %}
-
 		<noscript>			
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/skel.css" />
 			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
@@ -28,7 +24,8 @@
 		</noscript>
 
 		{% if page.title contains "Home" %}
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/bxslider.css" />		
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick.css" />
+			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick-theme.css" />	
 		{% endif %}
     
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->	

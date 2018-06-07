@@ -79,20 +79,78 @@
 			</div>	
 
     	{%  if page.title contains "Home" %}
-    		<script type="text/javascript">
-    			$('#bxslider').bxSlider({
-				mode: 'horizontal',
-				moveSlides: 1,
-				slideMargin: 40,
-				infiniteLoop: true,
-				slideWidth: 660,
-				minSlides: 3,
-				maxSlides: 3,
-				speed: 400,
-				pager:false,
-				auto: true				
-			});	
-    		</script>
+    	<script src="{{ site.baseurl }}/assets/js/slide/slick.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('div#bxslider').slick({
+				  autoplay: true,			  
+				  slidesToShow: 3,
+				  slidesToScroll: 1,
+				  arrows: true,
+				  infinite: true,
+				  adaptiveHeight: true,
+				  speed: 300,
+				  responsive: [	
+					{
+				      breakpoint: 1024,
+				      settings: {
+				        autoplay: true,			  
+					  	slidesToShow: 3,
+					  	slidesToScroll: 1,
+					  	arrows: true,
+					  	infinite: true,
+				      }
+				    },
+				    {
+				      breakpoint: 980,
+				      settings: {
+				        autoplay: false,			  
+					  	slidesToShow: 2,
+					  	slidesToScroll: 1,
+					  	arrows: true,
+					  	infinite: true,
+				      }
+				    },
+				    {
+				      breakpoint: 840,
+				      settings: {
+				      	autoplay: true,
+				        slidesToShow: 2,
+				        slidesToScroll: 1,
+				        arrows: true,
+				  		infinite: true
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				      	autoplay: false,
+				        slidesToShow: 1,
+				        slidesToScroll: 1,
+				        arrows: true,
+				  		infinite: true
+				      }
+				    }	
+				  ]
+			});
+
+
+			var $window = $(window);
+	    	var $slideContainer = $('#slideContainer');
+	    	function checkWidth() {
+	        	var windowsize = $window.width();
+	        	if(windowsize <=1024) $slideContainer.addClass('small');        	
+	        	else $slideContainer.removeClass('small');
+	        }
+
+	        checkWidth();
+	        $(window).resize(checkWidth);
+
+
+
+		});	
+		</script>
     	{% endif %}
 
 	</body>
