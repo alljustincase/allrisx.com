@@ -4,6 +4,6 @@ categories: Products
 featured: /assets/images/products/individuals.jpg
 layout: post
 permalink: /products/ind-fam.html
-intro: introduction text
+intro: 
 ---
 <p>Use AllRisX for yourself, your family and friends. Get the best quotes available and start to earn money by using AllRisX !</p>
