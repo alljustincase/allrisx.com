@@ -6,6 +6,15 @@
 
 /* Basic */
 
+	.container.slide-container{
+		width:80% !important;
+	}
+
+	h3.slide-text{
+		
+	}
+
+
 	body, input, select, textarea {
 		font-size: 13pt;
 	}
@@ -45,12 +54,31 @@
 		padding-left: 7em;
 	}
 
+	.box.highlight.narrower-remove-padding-left{		
+		padding-left:0;
+	}
+
+	.box.highlight.slide-highlight {
+		text-align: center !important;		
+	}
+
 		.box.highlight i {
 			position: absolute;
 			margin: 0;
 			left: 0;
 			top: 0.25em;
 		}
+
+		
+		.icon{
+			position: relative !important;
+    		text-decoration: none;
+		}
+
+		.icon.major{
+			margin: 0 0 2em 0 !important;
+		}
+
 
 	.box.post .inner {
 		margin-left: calc(20% + 2em);
