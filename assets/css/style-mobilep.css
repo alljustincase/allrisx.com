@@ -105,6 +105,10 @@
 		padding: 2em 20px 1px 20px;
 	}
 
+
+	.wrapper-slide{
+		padding: 2em 0 3em 0 !important;
+
 /* CTA */
 
 	#cta {
