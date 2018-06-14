@@ -1,13 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
+#### [Unreleased] 2018-06-03
+### Known Issues
 
+
+### Added
+- Want an app? section on homepage
+- Download page with 4 platforms logo
+
+##################################################################
 #### [Unreleased] 2018-06-03
 ### Known Issues
 
 
 ### Added
 - Breadcrumbs plugin
--- 
 - Logo navigates to homepage when it is being clicked
 
 ### Changed
