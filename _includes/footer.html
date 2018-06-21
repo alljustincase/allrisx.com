@@ -1,0 +1,157 @@
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row ">
+						<div class="6u">
+							<section id="custom-narrow-footer-width">
+								<h3>More Information</h3>
+								<ul class="links">
+									{% assign current = page.url | downcase | split: '/' %}
+									<li {% if page.title == "about" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/about.html">About Us</a>
+									</li>
+									<li {% if page.title == "contact" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/contact.html">Contact</a>
+									</li>
+									<li {% if page.title == "privacy" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/privacy.html">Privacy</a>
+									</li>
+									<li {% if page.title == "disclaimer" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/disclaimer.html">Disclaimer</a>
+									</li>
+									<li {% if page.title == "term of use" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/status.html">Status</a>
+									</li>
+									<li {% if page.title == "term of use" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/term-of-use.html">Term of Use</a>
+									</li>
+									<li {% if page.title-url == "licenses" %}class="active"{% endif %}>
+										<a href="{{ site.baseurl }}/licenses.html">Licenses</a>
+									</li>
+								</ul>
+							</section>
+						</div>    
+						<section class="6u">
+							<h3>Get In Touch</h3>
+							<form>
+								<div class="row half collapse-at-2">
+									<div class="6u">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="6u">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon fa-youtube" target="_blank"><span class="label">Youtube</span></a></li>
+					</ul>
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy;2018 AllRisX. All rights reserved</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>	
+
+    	{%  if page.title contains "Home" %}
+    	<script src="{{ site.baseurl }}/assets/js/slide/slick.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('div#bxslider').slick({
+				  autoplay: true,			  
+				  slidesToShow: 3,
+				  slidesToScroll: 1,
+				  arrows: true,
+				  infinite: true,
+				  adaptiveHeight: true,
+				  speed: 300,
+				  responsive: [	
+					{
+				      breakpoint: 1024,
+				      settings: {
+				        autoplay: true,			  
+					  	slidesToShow: 3,
+					  	slidesToScroll: 1,
+					  	arrows: true,
+					  	infinite: true,
+				      }
+				    },
+				    {
+				      breakpoint: 980,
+				      settings: {
+				        autoplay: true,			  
+					  	slidesToShow: 2,
+					  	slidesToScroll: 1,
+					  	arrows: true,
+					  	infinite: true,
+				      }
+				    },
+				    {
+				      breakpoint: 840,
+				      settings: {
+				      	autoplay: true,
+				        slidesToShow: 2,
+				        slidesToScroll: 1,
+				        arrows: true,
+				  		infinite: true
+				      }
+				    },
+				    {
+				      breakpoint: 480,
+				      settings: {
+				      	autoplay: true,
+				        slidesToShow: 1,
+				        slidesToScroll: 1,
+				        arrows: true,
+				  		infinite: true
+				      }
+				    }	
+				  ]
+			});
+
+
+			var $window = $(window);
+	    	var $slideContainer = $('#slideContainer');
+	    	function checkWidth() {
+	        	var windowsize = $window.width();
+	        	if(windowsize <=1024) $slideContainer.addClass('small');        	
+	        	else $slideContainer.removeClass('small');
+	        }
+
+	        checkWidth();
+	        $(window).resize(checkWidth);
+
+
+
+		});	
+		</script>
+    	{% endif %}
+
+	</body>
+</html>
