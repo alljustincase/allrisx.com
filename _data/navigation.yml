@@ -109,6 +109,12 @@ feats:
   - link: linkedin-integration.html
     text: LinkedIn Integration
     icon: fab fa-linkedin fa-sm
+  - link: powerapps-integration.html
+    text: PowerApps Integration
+    icon: far fa-file-powerpoint fa-sm
+  - link: msflow-integration.html
+    text: Microsoft Flow Integration
+    icon: fas fa-project-diagram fa-sm
 
 #menu of Technologies
 technos:
