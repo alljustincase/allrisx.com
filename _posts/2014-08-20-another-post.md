@@ -1,7 +1,8 @@
 ---
 title: Lorem Ipsum Dolor Sit Amet
+featured: /assets/images/pic03.jpg
 featured1: /assets/images/pic03.jpg
-featured2: /assets/images/pic01.jpg
+featured2: /assets/images/pic02.jpg
 featured3: /assets/images/pic01.jpg
 layout: three-img-post
 permalink: /blog/another.html
