@@ -767,11 +767,13 @@ html *
 		box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.5);
 	}
 
+				
 		.dropotron > li {
 			line-height: 2em;
 			padding: 0 1.1em 0 1em;
 		}
-
+		
+		
 			.dropotron > li > a {
 				color: #000000;
 				text-decoration: none;
