@@ -17,6 +17,12 @@
 		<script src="{{ site.baseurl }}/assets/js/skel-layers.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/init.js"></script>
 		<script src="{{ site.baseurl }}/assets/js/fontawesome-all.js"></script>
+
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		
+		<!--<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/fa-svg-with-js.css">-->
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick.css" />
+		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick-theme.css" />	
 		
 
 		<noscript>			
@@ -26,8 +32,7 @@
 		</noscript>
 
 		{% if page.title contains "Home" %}
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick.css" />
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick-theme.css" />	
+
 		{% endif %}
     	
 
@@ -122,7 +127,7 @@
 								<a href="{{"/pricing.html" | prepend: site.baseurl }}">Pricing</a>
 							</li>
 							<li>
-								<a href="">SignUp</a>
+								<a href="http://arx-prd-liv-rel-adf-wbs-all-pri-grn-fap.azurewebsites.net/wbs/Start">SignUp</a>
 							</li>
 							<li>
 								<a href="">SignIn</a>
