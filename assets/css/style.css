@@ -590,6 +590,26 @@ html *
 			font-size: 0.8em;
 		}
 
+		input[type="button"]:disabled,
+		input[type="button"][disabled],
+		input[type="submit"]:disabled,
+		input[type="submit"][disabled],
+		button:disabled,
+		button[disabled]{
+			background-color: #cccccc;
+			cursor:default;
+		}
+
+		input[type="button"]:disabled:hover,
+		input[type="button"][disabled]:hover,
+		input[type="submit"]:disabled:hover,
+		input[type="submit"][disabled]:hover,
+		button:disabled:hover,
+		button[disabled]:hover{
+			background-color: #cccccc;
+			cursor:default;
+		}
+
 /* Box */
 
 	.box.highlight {
