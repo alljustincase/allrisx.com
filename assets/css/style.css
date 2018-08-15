@@ -4,16 +4,15 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /* Basic */
-html *
-{     
-   font-family: Arial !important;  
-   
+html *{     
+   font-family: Arial !important;     
 }
 
 
 	body,
 	#skel-layers-wrapper {
-		background: #f7f7f7 url("images/bg01.png");
+		background: #f7f7f7 url("images/bg01.png");	
+		color: #474747;			
 	}
 
 	.signin-background{
@@ -49,13 +48,18 @@ html *
 		animation: none !important;
 	}
 
-	body, input, select, textarea {
-		color: #474747;
-		/*font-family: 'Source Sans Pro', sans-serif;*/
+	body,input, select, textarea {
+		color: #474747;		
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
 	}
+
+
+	body{
+		border: 1px solid transparent;
+	}
+
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -85,6 +89,12 @@ html *
 		margin: 0 0 2em 0;
 	}
 
+
+	ul.links{
+		margin-bottom: 0;
+	}
+
+
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
 		font-weight: 600;
@@ -109,6 +119,10 @@ html *
 
 	h2.border-bottom{
 		border-bottom: 1px solid Silver;	
+	}
+
+	h2.content-title{
+		margin-bottom: 0.5em;
 	}
 
 
@@ -150,6 +164,20 @@ html *
 		text-align: center;
 	}
 
+	.reset-margin{
+		margin: 0;
+	}
+
+
+	.reset-padding{
+		padding: 0;
+	}
+
+
+	.margin-bottom-one-em{
+		margin-bottom: 1em;
+	}
+
 	header p {
 		color: #999999;
 		font-size: 1.25em;
@@ -158,9 +186,11 @@ html *
 		margin-bottom: 2.25em;
 	}
 
+
+
 	header.major {
 		text-align: center;
-		margin: 0 0 2em 0;
+		/*margin: 0 0 2em 0;*/
 	}
 
 
@@ -176,12 +206,18 @@ html *
 		header.major p {
 			position: relative;
 			border-top: solid 1px #e0e0e0;
-			padding: 1em 0 0 0;
+			padding: 0.25em 0 0 0; /*replace 1em*/
 			margin: 0;
 			top: -1em;
 			font-size: 1.5em;
 			letter-spacing: -0.025em;
 		}
+
+	header.center-text-header-with-margin-bottom{
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
 
 	footer {
 		margin: 0 0 3em 0;
@@ -282,7 +318,7 @@ html *
 		.image.left {
 			display: block;
 			float: left;
-			margin: 0 2em 2em 0;
+			margin: 0 1.25em 1.25em 0; /*replace margin: 0 2em 2em 0;*/
 			position: relative;
 			top: 0.25em;
 		}
@@ -372,7 +408,7 @@ html *
 			line-height: 7em;
 			box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
 			margin: 0 0 2em 0;
-			padding: 2em;
+			padding: 1em 1em 1.25em 1.25em;
 		}
 
 			.icon.major:before {
@@ -618,7 +654,7 @@ html *
 
 	.box.post {
 		position: relative;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 		.box.post:after {
@@ -640,11 +676,11 @@ html *
 			margin: 0;
 		}
 
-/* Header */
 
+/* Header */
 	#header {
 		text-align: center;
-		padding: 3em 0 0 0;
+		padding: 1em 0 0 0;
 		background-color: #336666;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
@@ -653,7 +689,7 @@ html *
 	}
 
 		#header h1 {
-			padding: 0 0 2.75em 0;
+			padding: 0 0 1em 0;
 			margin: 0;
 		}
 
@@ -724,7 +760,7 @@ html *
 					text-decoration: none;
 					border: 0;					
 					display: inline-block;
-					padding: 1.5em 0.5em 1.35em 0.5em;
+					padding: 1em 0.25em 1em 0.5em
 				}
 
 				#nav > ul > li:first-child {
@@ -811,6 +847,7 @@ html *
 		    margin-top: -1px;			
 			height: auto;
 		}
+
 		
 		/*https://stackoverflow.com/questions/6509106/is-there-a-way-to-break-a-list-into-columns*/
 		.dropotron.level-0.two-columns {
@@ -883,7 +920,7 @@ html *
 			background: #336666;
 			background: rgba(51, 102, 102, 0.75);
 			color: #fff;
-			padding: 1.5em 0;
+			padding: 0.75em 0;
 		}
 
 			#banner header h2 {
@@ -925,22 +962,27 @@ html *
 
 /* breadcrumb */	
 .breadcrumb{
-	margin: 0.7em 0;
+	margin: 0.5em 0 0.5em 0 !important;
 }	
 
 
 /* Wrapper */
 
-	.wrapper {
-		padding: 5em 0 3em 0;
+	.wrapper {		
+		padding: 1em 0 1.25em 0; /*5em 0 3em 0;*/
 	}
 
 	.wrapper-custom-top-padding {
-		padding: 2em 0 3em 0;		
+		padding: 1em 0;		
 	}
 
-	.wrapper-slide{
-		padding: 5em 0 !important;
+
+	.wrapper-content{
+		padding: 0.5em 0;
+	}
+
+	.wrapper-slide{		
+		padding: 1.25em 0 0.5em 0 !important;
 	}
 
 		.wrapper.style1 {
@@ -980,11 +1022,20 @@ html *
 			background-color: #336666;
 		}
 
+
+/*begin: three-img-post*/
+section#content-three-img-post1 > p,
+section#content-three-img-post2 > p,
+section#content-three-img-post3 > p{
+	margin:0;
+}
+/*end:  three-img-post*/
+
+
 /* CTA */
 
 	#cta {
-		text-align: center;
-		padding: 3.5em 0;
+		text-align: center;						
 	}
 
 		#cta header h2 {
@@ -1001,7 +1052,7 @@ html *
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 0.75em 0 0 0;
 	}
 
 		#footer section#custom-narrow-footer-width{
@@ -1019,7 +1070,7 @@ html *
 			}
 
 		#footer .container {
-			margin-bottom: 4em;
+			margin-bottom: 0;
 		}
 
 		#footer .icons {
@@ -1036,10 +1087,8 @@ html *
 				}
 
 		#footer .copyright {
-			color: #999999;
-			margin-top: 1.5em;
+			/*font-color: #999999;*/
+			margin-top: 0.5em; /* replace 1.5em*/
 			text-align: center;
 			font-size: 0.9em;
 		}
-
- 

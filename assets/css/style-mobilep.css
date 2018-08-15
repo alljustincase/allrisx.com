@@ -5,6 +5,12 @@
 */
 
 /* Lists */
+@media screen and (max-width: 480px) {
+ 	#bxslider > div > div > div.slick-slide.slick-current.slick-active > div > section > div > a > i > svg{
+ 		font-size: 2.5em; 		
+ 	}
+
+}
 
 	ul.actions li {
 		display: block;
@@ -20,13 +26,18 @@
 	.icon.major {
 		width: 4em;
 		height: 4em;
-		line-height: 4em;
+		line-height: 5em;
+		padding:0;
 		box-shadow: 0 0 0 7px white, 0 0 0 8px #e0e0e0;
 	}
 
 		.icon.major:before {
 			font-size: 24px;
 		}
+
+	.slick-list{
+		padding-top:10px !important;
+	}
 
 /* Button */
 
@@ -66,7 +77,7 @@
 /* Banner */
 
 	#banner {
-		height: 10em;
+		height: 8em; /*replace 10em*/
 	}
 
 		#banner header {
@@ -100,14 +111,10 @@
 			}
 
 
+
 /* Wrapper */
 	.wrapper {
 		padding: 2em 20px 1px 20px;
-	}
-
-
-	.wrapper-slide{		
-		padding: 2em 0 !important;
 	}
 
 	
