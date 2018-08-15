@@ -45,23 +45,22 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 3em 0 1em 0;
+		padding: 2em 0;
 	}
 
 /* CTA */
 
 	#cta {
-		padding: 2em 0;
+		padding: 1em 0;
 	}
 
 /* Footer */
 
 	#footer {
-		padding: 3em 0 3em 0;
+		padding: 0.75em 0 0 0;
 	}
 
-		#footer .container {
-			margin-bottom: 1em;
-		}
 
-
+.wrapper-custom-top-padding {
+    padding: 1em 0;
+}
