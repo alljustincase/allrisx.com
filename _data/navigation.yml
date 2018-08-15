@@ -15,106 +15,106 @@ prods:
 feats:
   - link: partner-management.html
     text: Partner Management
-    icon: fas fa-bullhorn fa-sm
+    icon: fas fa-bullhorn fa-4x
   - link: project-management.html
     text: Project Management
-    icon: fas fa-briefcase fa-sm
+    icon: fas fa-briefcase fa-4x
   - link: policy-management.html
     text: Policy Management
-    icon: fas fa-check fa-sm
+    icon: fas fa-check fa-4x
   - link: claim-management.html
     text: Claim Management
-    icon: fas fa-cog fa-sm
+    icon: fas fa-cog fa-4x
   - link: document-management.html
     text: Document Management
-    icon: fas fa-clipboard fa-sm
+    icon: fas fa-clipboard fa-4x
   - link: task-management.html
     text: Task Management
-    icon: fas fa-columns fa-sm
+    icon: fas fa-columns fa-4x
   - link: commission-management.html
     text: Commission Management
-    icon: fas fa-donate fa-sm
+    icon: fas fa-donate fa-4x
   - link: multilevel-marketing.html
     text: Multilevel Marketing
-    icon: fas fa-chart-line fa-sm
+    icon: fas fa-chart-line fa-4x
   - link: quote-calculators.html
     text: Quote Calculators
-    icon: fas fa-calculator fa-sm
+    icon: fas fa-calculator fa-4x
   - link: premium-comparisons.html
     text: Premium comparisons
-    icon: fas fa-chart-bar fa-sm
+    icon: fas fa-chart-bar fa-4x
   - link: custom-forms-system.html
     text: Custom Forms System
-    icon: fas fa-briefcase fa-sm
+    icon: fas fa-briefcase fa-4x
   - link: workflow-integration.html
     text: Workflow Integration
-    icon: fas fa-code-branch fa-sm
+    icon: fas fa-code-branch fa-4x
   - link: ms-azure-integration.html
     text: MS Azure Integration
-    icon: fas fa-cloud fa-sm
+    icon: fas fa-cloud fa-4x
   - link: office-365-integration.html
     text: Office 365 Integration
-    icon: fas fa-file-code fa-sm
+    icon: fas fa-file-code fa-4x
   - link: chat-integrations.html
     text: Chat Integrations
-    icon: fas fa-comment fa-sm
+    icon: fas fa-comment fa-4x
   - link: configurable-notifications.html
     text: Configurable Notifications
-    icon: fas fa-bell fa-sm
+    icon: fas fa-bell fa-4x
   - link: integration-platforms-support.html
     text: Integration platforms support
-    icon: fas fa-code fa-sm
+    icon: fas fa-code fa-4x
   - link: transactional-email-support.html
     text: Transactional EMail support
-    icon: far fa-envelope-open fa-sm
+    icon: far fa-envelope-open fa-4x
   - link: email-pdf-chat-templates.html
     text: EMail-,PDF-,Chat-Templates
-    icon: fas fa-briefcase fa-sm
+    icon: fas fa-briefcase fa-4x
   - link: custom-reporting.html
     text: Custom Reporting
-    icon: fas fa-check fa-sm
+    icon: fas fa-check fa-4x
   - link: custom-branding.html
     text: Custom Branding
-    icon: fas fa-bookmark fa-sm
+    icon: fas fa-bookmark fa-4x
   - link: multi-tenancy-support.html
     text: Multi Tenancy support
-    icon: fas fa-cogs fa-sm
+    icon: fas fa-cogs fa-4x
   - link: browser-desktop-mobile-apps.html
     text: Browser-,Desktop-,Mobile-Apps
-    icon: fas fa-laptop fa-sm
+    icon: fas fa-laptop fa-4x
   - link: offline-capabilities.html
     text: Offline capabilities
-    icon: fas fa-power-off fa-sm
+    icon: fas fa-power-off fa-4x
   - link: blockchain-support.html
     text: BlockChain support
-    icon: fab fa-bitcoin fa-sm
+    icon: fab fa-bitcoin fa-4x
   - link: rest-apis-and-rest-hooks.html
     text: REST-APIs and REST-Hooks
-    icon: fas fa-anchor fa-sm
+    icon: fas fa-anchor fa-4x
   - link: scalability-and-availability.html
     text: Scalability and Availability
-    icon: fas fa-arrows-alt fa-sm
+    icon: fas fa-arrows-alt fa-4x
   - link: artificial-intelligence.html
     text: Artificial Intelligence
-    icon: fab fa-connectdevelop fa-sm
+    icon: fab fa-connectdevelop fa-4x
   - link: internet-of-things.html
     text: Internet of Things
-    icon: fas fa-universal-access fa-sm
+    icon: fas fa-universal-access fa-4x
   - link: security-and-compliance.html
     text: Security and Compliance
-    icon: fas fa-bomb fa-sm
+    icon: fas fa-bomb fa-4x
   - link: facebook-integration.html
     text: Facebook Integration
-    icon: fab fa-facebook-f fa-sm
+    icon: fab fa-facebook-f fa-4x
   - link: linkedin-integration.html
     text: LinkedIn Integration
-    icon: fab fa-linkedin fa-sm
+    icon: fab fa-linkedin fa-4x
   - link: powerapps-integration.html
     text: PowerApps Integration
-    icon: far fa-file-powerpoint fa-sm
+    icon: far fa-file-powerpoint fa-4x
   - link: msflow-integration.html
     text: Microsoft Flow Integration
-    icon: fas fa-project-diagram fa-sm
+    icon: fas fa-project-diagram fa-4x
 
 #menu of Technologies
 technos:
