@@ -1,2 +1,0 @@
-# allrisx.com
-Homepage
