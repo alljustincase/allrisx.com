@@ -1,0 +1,9 @@
+---
+layout: compress
+---
+{% include header.html %}
+{% unless page.title contains "Home" %}
+{% include nav-breadcrumbs.html %}
+{% endunless %}
+	{{ content }}
+{% include footer.html %}

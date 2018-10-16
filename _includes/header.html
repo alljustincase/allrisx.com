@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>		
+		<title>AllRisX - {{ page.title }}</title>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">   
+	    <meta http-equiv="Cache-Control" content="max-age=1209600">
+		  
+		<link rel="manifest" href="/manifest.json?v=001">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png?v=001">
+		<meta name="theme-color" content="#ffffff">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png?v=001">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png?v=001">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png?v=001">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png?v=001">
+		<link rel="apple-touch-icon"  sizes="114x114" href="/apple-icon-114x114.png?v=001">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png?v=001">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png?v=001">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png?v=001">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png?v=001">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png?v=001">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=001">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=001">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=001">
+		<link rel="preload" as="style" href="{{ "/assets/css/fa-svg-with-js.css?v=001" | prepend: site.baseurl }} "onload="this.rel='stylesheet'" media="screen,print" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css?v=001" /><![endif]-->		
+	</head>	
+	<body>		
+		<div id="header">
+			<h1><a href="{{ site.baseurl }}/" id="logo">						
+				<img  id="allrisx-logo" src="{{ site.baseurl }}/assets/images/allrisx-logo.png?v=001"/>
+		    </a></h1>
+			<nav id="nav">
+				<ul>
+					{% assign current = pagef.url | downcase | split: '/' %}
+					<li {% if page.title == "Home" %}class="current"{% endif %}>
+						<a href="{{"/" | prepend: site.baseurl }}">Home</a>
+					</li>
+
+					<li {% if page.categories == "Products" %}class="current"{% endif %}>
+						<a href="">Products</a>
+						<ul>
+							{% for prod in site.data.navigation.prods %}
+							<li>
+								<a href="{{"/products/" | prepend: site.baseurl }}{{ prod.link }}">
+								{{ prod.text }}</a>
+							</li>										    
+							{% endfor %}
+						</ul>
+					</li>
+					<li {% if page.categories == "Features" %}class="current"{% endif %}>
+						<a href="">Features</a>
+						<ul class="two-columns">
+							{% for feat in site.data.navigation.feats %}
+							<li>
+								<a href="{{"/features/" | prepend: site.baseurl }}{{ feat.link }}">
+								{{ feat.text }}</a>
+							</li>										    
+							{% endfor %}
+						</ul>
+					</li>
+					<li {% if page.categories == "Technologies" %}class="current"{% endif %}>
+						<a href="">Technologies</a>
+						<ul class="three-columns">
+							{% for techno in site.data.navigation.technos %}
+							<li>
+								<a href="{{"/technologies/" | prepend: site.baseurl }}{{ techno.link }}">
+								{{ techno.text }}</a>
+							</li>										    
+							{% endfor %}									
+						</ul>
+					</li>
+					<li {% if page.title == 'Blog' %}class="current"{% endif %}>
+						<a href="{{ site.baseurl }}/blog/">Blog</a>
+					</li>
+					<li {% if page.title == "Pricing" %}class="current"{% endif %}>
+						<a href="{{"/pricing.html" | prepend: site.baseurl }}">Pricing</a>
+					</li>
+					<li>
+						<a href="http://arx-prd-liv-rel-adf-wbs-all-pri-grn-fap.azurewebsites.net/wbs/Start" target="_blank">SignUp</a>
+					</li>
+					<li>
+						<a href="">SignIn</a>
+					</li>
+				</ul>
+			</nav>
+		</div>			
