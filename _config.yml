@@ -25,17 +25,7 @@ breadcrumbs:
   root:
     hide: false  # show breadcrumbs on root/home page
     image: false # Show image or title text
-
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: true
-  startings: [html, head, body]
-    
+ 
 excluded:
   - changelog.md
   - features-slider.html
