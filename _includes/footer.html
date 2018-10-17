@@ -102,8 +102,8 @@
 
 		<script src="{{ site.baseurl }}/assets/js/fontawesome-all.js?v=001" async></script>
 		<script src="https://www.google.com/recaptcha/api.js?v=001" async></script>
-    	{%  if page.title contains "Home" %}
-    		<script src="{{ site.baseurl }}/assets/js/slide/slick.js?v=001" async></script>	
+    	{%  if page.title == "Home" %}
+    		<script src="{{ site.baseurl }}/assets/js/slide/slick.js?v=001"></script>	
     	{% endif %}    	
 		<script type="text/javascript">
 		var enableBtn = function(response) {
