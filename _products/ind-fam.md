@@ -1,7 +1,7 @@
 ---
 title: For Individuals or Families
 categories: Products
-featured: /assets/images/products/individuals.jpg
+featured: /assets/images/products/individuals.png
 layout: post
 permalink: /products/ind-fam.html
 intro:

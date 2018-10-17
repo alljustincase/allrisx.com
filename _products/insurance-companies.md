@@ -1,7 +1,7 @@
 ---
 title: For Insurance Companies
 categories: Products
-featured: /assets/images/products/insure-comp.jpg
+featured: /assets/images/products/insure-comp.png
 layout: post
 permalink: /products/insurance-companies.html
 intro: 
