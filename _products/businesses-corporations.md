@@ -1,7 +1,7 @@
 ---
 title: For Businesses or Corporations
 categories: Products
-featured: /assets/images/products/corporations.png
+featured: /assets/images/products/corporations.png?v=001
 layout: post
 permalink: /products/businesses-corporations.html
 intro: 

@@ -1,7 +1,7 @@
 ---
 title: For Agencies and Brokers
 categories: Products
-featured: /assets/images/products/agencies-brokers.png
+featured: /assets/images/products/agencies-brokers.png?v=001
 layout: post
 permalink: /products/agencies-brokers.html
 intro: 
