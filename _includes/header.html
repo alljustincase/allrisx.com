@@ -33,10 +33,10 @@
 		<link rel="preload" as="style" href="{{ "/assets/css/font-awesome.min.css" | prepend: site.baseurl }} "onload="this.rel='stylesheet'" media="screen,print" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie/v8.css" /><![endif]-->
 		{%  if page.title contains "Home" %}
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick.css" media="screen" />
-			<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/slide/slick-theme.css" media="screen" />	
+			<link rel="preload" as="style" href="{{ "/assets/css/slide/slick.css" | prepend: site.baseurl }} "onload="this.rel='stylesheet'" media="screen,print" />
+			<link rel="preload" as="style" href="{{ "/assets/css/slide/slick-theme.css" | prepend: site.baseurl }} "onload="this.rel='stylesheet'" media="screen,print" />
 		{% endif %}	
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" async></script>		
 	</head>	
 	<body>		
 		<div id="header">
